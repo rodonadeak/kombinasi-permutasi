@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Permutasi & Kombinasi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator-container">
+    <h1>Kalkulator Permutasi & Kombinasi</h1>
+    <label for="calcType">Pilih jenis perhitungan:</label>
+    <select id="calcType">
+      <option value="permutation">Permutasi</option>
+      <option value="combination">Kombinasi</option>
+    </select>
+    
+    <label for="n">
+      Masukkan nilai n <span class="tooltip">?
+        <span class="tooltiptext">n adalah jumlah total elemen yang tersedia.</span>
+      </span>
+    </label>
+    <input type="number" id="n" placeholder="Masukkan jumlah total elemen (n)" min="0">
+    
+    <label for="r">
+      Masukkan nilai r <span class="tooltip">?
+        <span class="tooltiptext">r adalah jumlah elemen yang dipilih dari n.</span>
+      </span>
+    </label>
+    <input type="number" id="r" placeholder="Masukkan jumlah elemen yang dipilih (r)" min="0">
+    
+    <button onclick="calculate()">Hitung</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
